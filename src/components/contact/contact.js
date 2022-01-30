@@ -6,7 +6,7 @@ import IndeedIcon from '../../media/indeed_icon.png';
 
 export const Contact = () => {
     return (
-        <div className={ContactStyle.contactContainer}>
+        <div className={ContactStyle.contactContainer} id="contactHash">
             <div>
                 <h1>Contact Us</h1>
             </div>

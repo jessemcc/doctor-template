@@ -6,7 +6,7 @@ export const About = () => {
 const doctorName = "Dr. Tyson";
 
     return (
-        <div className={AboutStyle.aboutContainer}>
+        <div className={AboutStyle.aboutContainer} id="aboutHash">
             <div className={AboutStyle.imageContainer}>
                 <img className={AboutStyle.imageStyle} src={DoctorImg} alt="Image of Doctor" />
             </div>

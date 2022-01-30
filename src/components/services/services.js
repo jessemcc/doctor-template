@@ -17,7 +17,7 @@ export const Services = () => {
     const medicalServicePrice6 = "50$";
 
     return (
-        <div className={ServicesStyle.servicesContainer}>
+        <div className={ServicesStyle.servicesContainer} id="servicesHash">
             <h1 className={ServicesStyle.servicesTitle}>Services</h1>
             <div className={ServicesStyle.servicesGroupContainer}>
                 <div className={ServicesStyle.soloServicesContainer}>
