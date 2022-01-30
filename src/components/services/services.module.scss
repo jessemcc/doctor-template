@@ -12,3 +12,36 @@
     }
 }
 
+.servicesContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.servicesGroupContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2em 0;
+}
+
+.servicesTitle {
+    width: 100%;
+    text-align: center;
+}
+
+.soloServicesContainer {
+    width: 20%;
+    text-align: center;
+
+    .servicesImage {
+        width: 100%;
+        margin: 0;
+    }
+
+    .servicesTitle {
+        margin: -0.25em 0 -1em 0;
+    }
+}
+
+

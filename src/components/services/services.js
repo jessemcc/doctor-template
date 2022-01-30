@@ -1,5 +1,6 @@
 import React from 'react';
 import MedicalService from '../../media/medical_service.png';
+import ServicesStyle from './services.module.scss';
 
 export const Services = () => {
     const medicalServiceTitle1 = "Service Offered";
@@ -16,36 +17,29 @@ export const Services = () => {
     const medicalServicePrice6 = "50$";
 
     return (
-        <div>
-            <div>
-                <img src={MedicalService} alt="Image of the service offered" />
-                <h4>{medicalServiceTitle1}</h4>
-                <p>Cost: {medicalServicePrice1}</p>
-            </div>
-            <div>
-                <img src={MedicalService} alt="Image of the service offered" />
-                <h4>{medicalServiceTitle2}</h4>
-                <p>Cost: {medicalServicePrice2}</p>
-            </div>
-            <div>
-                <img src={MedicalService} alt="Image of the service offered" />
-                <h4>{medicalServiceTitle3}</h4>
-                <p>Cost: {medicalServicePrice3}</p>
-            </div>
-            <div>
-                <img src={MedicalService} alt="Image of the service offered" />
-                <h4>{medicalServiceTitle4}</h4>
-                <p>Cost: {medicalServicePrice4}</p>
-            </div>
-            <div>
-                <img src={MedicalService} alt="Image of the service offered" />
-                <h4>{medicalServiceTitle5}</h4>
-                <p>Cost: {medicalServicePrice5}</p>
-            </div>
-            <div>
-                <img src={MedicalService} alt="Image of the service offered" />
-                <h4>{medicalServiceTitle6}</h4>
-                <p>Cost: {medicalServicePrice6}</p>
+        <div className={ServicesStyle.servicesContainer}>
+            <h1 className={ServicesStyle.servicesTitle}>Services</h1>
+            <div className={ServicesStyle.servicesGroupContainer}>
+                <div className={ServicesStyle.soloServicesContainer}>
+                    <img className={ServicesStyle.servicesImage} src={MedicalService} alt="Image of the service offered" />
+                    <h4 className={ServicesStyle.servicesTitle}>{medicalServiceTitle1}</h4>
+                    <p>Cost: {medicalServicePrice1}</p>
+                </div>
+                <div className={ServicesStyle.soloServicesContainer}>
+                    <img className={ServicesStyle.servicesImage} src={MedicalService} alt="Image of the service offered" />
+                    <h4 className={ServicesStyle.servicesTitle}>{medicalServiceTitle2}</h4>
+                    <p>Cost: {medicalServicePrice2}</p>
+                </div>
+                <div className={ServicesStyle.soloServicesContainer}>
+                    <img className={ServicesStyle.servicesImage} src={MedicalService} alt="Image of the service offered" />
+                    <h4 className={ServicesStyle.servicesTitle}>{medicalServiceTitle3}</h4>
+                    <p>Cost: {medicalServicePrice3}</p>
+                </div>
+                <div className={ServicesStyle.soloServicesContainer}>
+                    <img className={ServicesStyle.servicesImage} src={MedicalService} alt="Image of the service offered" />
+                    <h4 className={ServicesStyle.servicesTitle}>{medicalServiceTitle4}</h4>
+                    <p>Cost: {medicalServicePrice4}</p>
+                </div>
             </div>
         </div>
     )
