@@ -1,0 +1,57 @@
+.carousel {
+    overflow: hidden;
+    border: 3mm ridge #AB8BC7;
+    background-image: radial-gradient(circle, white, black);
+    height: 100%;
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+}
+
+.carouselItem {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.indicators > button {
+    margin: 5px;
+}
+
+.indicators > button:active {
+    background-color: grey;
+    color: black;
+    z-index: 1;
+}
+
+.buttonPushable {
+    background: #167AA8;
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+  }
+  
+  .buttonFront {
+      display: block;
+      padding: 0.4em;
+      border-radius: 0.5em;
+      font-size: 1.25rem;
+      background-color: #9FDAF5;
+      color: black;
+      transform: translateY(-2.5px);
+      text-decoration: none;
+  }
+  
+  .buttonPushable:active .buttonFront {
+    transform: translateY(0);
+  }
