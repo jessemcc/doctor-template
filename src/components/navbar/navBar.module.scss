@@ -22,42 +22,44 @@
     z-index: 1;
 }
 
+.logoContainer {
+  height: 100%;
+  width: 55px;
+  margin: 0 auto;
+  padding-left: 1em;
+
+  @include for-size (phone-only) {
+    display: none;
+  }
+
+  @include for-size (tablet-portrait-up) {
+    display: none;
+  }
+
+  .logo {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .listStyle { 
     width: 100%;
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     font-size: 1.5em;
-    padding-right: 2em;
+    padding-right: 1em;
 
     @include for-size (phone-only) {
       padding: 0 0.25em;
       margin: 0;
       font-size: 1em;
     }
-
-    .logoContainer {
-      height: 90%;
-      width: 50px;
-      padding-top: 0.25em;
-
-      @include for-size (phone-only) {
-        display: none;
-      }
-
-      @include for-size (tablet-portrait-up) {
-        display: none;
-      }
-
-      .logo {
-        height: 100%;
-        width: 100%;
-      }
-    }
 }
 
 .linkStyle {
   text-decoration: none;
   color: black;
+  padding: 0 1em;
 }

@@ -56,17 +56,17 @@ export const Carousel = ({children}) => {
                         Virtual Care
                     </HashLink>
                 </button>
-                <button onClick={() => {
+                <button className={CarouselStyle.carouselButton} onClick={() => {
                     updateIndex(activeIndex - 1);
-                }}>Previous</button>
+                }}>Prev</button>
                 {React.Children.map(children, (child, index) => {
                     return (
-                        <button className={`${index === activeIndex ? "active" : ""}`} onClick={() => {
+                        <button className={`${index === activeIndex ? "active" : ""}`, CarouselStyle.carouselButton} onClick={() => {
                             updateIndex(index);
                         }}>{index + 1}</button>
                     )
                 })}
-                <button onClick={()=> {
+                <button className={CarouselStyle.carouselButton} onClick={()=> {
                     updateIndex(activeIndex + 1);
                 }}>Next</button>
                 <button className={CarouselStyle.buttonPushable}>
