@@ -26,7 +26,7 @@
 
 .staffContainer {
     height: 250px;
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 1em 0;
     display: flex;
@@ -42,13 +42,15 @@
     }
 
     @include for-size (tablet-portrait-up) {
+      flex-direction: column;
       height: 100%;
-      margin: 2em;
+      align-items: center;
+      justify-content: center;
     }
 
     @include for-size (tablet-landscape-up) {
       height: 100%;
-      margin: 2em;   
+      padding: 1em;
     }
 
     .desktopOnly {
@@ -67,7 +69,7 @@
         @include for-size (tablet-portrait-up) {
           height: auto;
           width: 50%;
-          margin: auto auto;
+          padding: 1em;
         }
 
         @include for-size (tablet-landscape-up) {
@@ -87,14 +89,15 @@
           text-align: center;
         }
 
-        @include for-size (tablet-landscape-up) {
-          height: 100%;
+        @include for-size (tablet-portrait-up) {
+          width: 85%;
+          padding-right: 0.5em;
+          margin: auto auto;
+          text-align: center;
         }
 
-        .tabletPortraitTitle {
-          @include for-size (tablet-portrait-up) {
-            margin: 0;
-          }
+        @include for-size (tablet-landscape-up) {
+          padding-left: 1em;
         }
 
         .strongStyle {

@@ -30,7 +30,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 2em 0;
+    padding: 4em 0 8em 0;
 
     @include for-size (phone-only) {
         flex-wrap: wrap;
@@ -48,6 +48,7 @@
 .servicesTitle {
     width: 100%;
     text-align: center;
+    padding: 2em 0;
 }
 
 .soloServicesContainer {
@@ -56,17 +57,14 @@
 
     @include for-size (phone-only) {
         width: 40%;
-        margin: 1.5em 1em;
     }
 
     @include for-size (tablet-portrait-up) {
       width: 40%;
-      margin: 2em 1.5em; 
     }
 
     @include for-size (tablet-landscape-up) {
       width: 40%;
-      margin: 2em 1.5em;   
     }
 
     .servicesImage {

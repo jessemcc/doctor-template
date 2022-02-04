@@ -58,17 +58,10 @@ export const Carousel = ({children}) => {
                 </button>
                 <button className={CarouselStyle.carouselButton} onClick={() => {
                     updateIndex(activeIndex - 1);
-                }}>Prev</button>
-                {React.Children.map(children, (child, index) => {
-                    return (
-                        <button className={`${index === activeIndex ? "active" : ""}`, CarouselStyle.carouselButton} onClick={() => {
-                            updateIndex(index);
-                        }}>{index + 1}</button>
-                    )
-                })}
+                }}>&#x2190;</button>
                 <button className={CarouselStyle.carouselButton} onClick={()=> {
                     updateIndex(activeIndex + 1);
-                }}>Next</button>
+                }}>&#x2192;</button>
                 <button className={CarouselStyle.buttonPushable}>
                     <HashLink
                         className={CarouselStyle.buttonFront}

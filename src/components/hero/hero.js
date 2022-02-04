@@ -1,9 +1,9 @@
 import React from 'react';
 import {Carousel, CarouselItem} from '../carousel/carousel';
 import HeroStyle from './hero.module.scss';
-import Image1 from '../../media/image1placeholder.png';
-import Image2 from '../../media/image2placeholder.png';
-import Image3 from '../../media/image3placeholder.png';
+import Image1 from '../../media/carousel_image_1.jpg';
+import Image2 from '../../media/carousel_image_2.jpg';
+import Image3 from '../../media/carousel_image_3.jpg';
 
 export const Hero = () => {
     return (

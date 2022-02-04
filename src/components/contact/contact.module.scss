@@ -18,6 +18,7 @@
     background-color: #5F407A;
     color: #E7CCFF;
     border: 1px solid black;
+    border-right: none;
 
     @include for-size (phone-only) {
       padding: 0;

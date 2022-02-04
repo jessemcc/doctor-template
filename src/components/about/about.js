@@ -1,19 +1,19 @@
 import React from 'react';
 import AboutStyle from './about.module.scss';
-import DoctorImage from '../../media/doctor_image.jpg';
+import HeadDoctor from '../../media/head_doctor_image.jpg';
 import ClinicImage from '../../media/clinic_building.jpg';
 
 export const About = () => {
-    const headDoctorName = "Dr. Placeholder";
-    const clinicBuildingName = "Placeholder Clinic";
+    const headDoctorName = "Dr. Geneva";
+    const clinicBuildingName = "Hopewell";
 
     return (
-        <div className={AboutStyle.mainContainer}>
+        <div className={AboutStyle.mainContainer} id="aboutHash">
             <div className={AboutStyle.aboutContainer}>
-                <h1>About {headDoctorName}</h1>
+                <h1>{headDoctorName} MD, PH.D., BA</h1>
                 <img 
                     className={AboutStyle.imageStyle} 
-                    src={DoctorImage} 
+                    src={HeadDoctor} 
                     alt="Image of the head Doctor" />
                 <p className={AboutStyle.pStyle}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing 
